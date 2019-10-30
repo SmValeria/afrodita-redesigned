@@ -1,0 +1,23 @@
+.breadcrumbs__list {
+  display: flex;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  color: #f89513;
+  margin-right: 5px;
+
+  &:not(:first-of-type):before {
+    content: '/';
+    display: flex;
+    margin-right: 5px;
+  }
+
+  &:last-of-type {
+    color: rgba(34, 31, 31, 0.8);
+    text-decoration: none;
+    margin-right: 0;
+  }
+}

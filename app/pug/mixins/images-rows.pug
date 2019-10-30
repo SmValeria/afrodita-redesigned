@@ -1,0 +1,10 @@
+mixin image-rows({list, blockClass})
+    ul.image-rows(class=blockClass)
+      each item in list
+        li.image-rows__item
+          a.image-rows__link(href="#")
+            +image({
+              path: item.imgPath,
+              blockClass: 'image-rows__image',
+              altText: item.title
+            })

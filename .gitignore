@@ -1,0 +1,5 @@
+.idea/
+node_modules
+afrodita-redesigned
+*.exe
+*.cfg

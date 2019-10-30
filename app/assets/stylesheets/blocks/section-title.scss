@@ -1,0 +1,14 @@
+.section-title {
+  font-size: 49px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+
+  &--lowercase {
+    text-transform: none;
+  }
+
+  @include tablets {
+    font-size: 28px;
+  }
+}

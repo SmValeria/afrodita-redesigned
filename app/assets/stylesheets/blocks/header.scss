@@ -1,0 +1,27 @@
+.header {
+  padding: 15px 0;
+  color: var(--text-color-light);
+  background-color: var(--bg-color-dark);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.header__logo {
+  @include tablets {
+    margin-bottom: 15px;
+  }
+}
+
+.header__contacts {
+  @include tablets {
+    align-self: flex-end;
+  }
+}

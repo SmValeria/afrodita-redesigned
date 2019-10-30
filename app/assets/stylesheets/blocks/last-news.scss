@@ -1,0 +1,30 @@
+.last-news {
+  padding: 20px 0;
+}
+.last-news__header {
+  margin-bottom: 65px;
+}
+
+.last-news__box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.last-news__photo-list {
+  font-family: "Roboto", Arial, sans-serif;
+
+  @include tablets {
+    margin-right: 0;
+  }
+}
+
+.last-news__pagination {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", Arial, sans-serif;
+}

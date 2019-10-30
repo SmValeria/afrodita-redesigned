@@ -1,0 +1,10 @@
+include ../data/benefits
+include ../mixins/cards
+
+section.benefits
+  h2.section-title.benefits__header Услуги
+  +cards({
+    list: benefits,
+    blockClass: "benefits__cards"
+  })
+

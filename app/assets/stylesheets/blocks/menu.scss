@@ -1,0 +1,77 @@
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  @include tablets {
+    flex-direction: row;
+  }
+}
+
+.menu__item {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: color 0.4s;
+  margin-bottom: 26px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+
+    @include tablets {
+      margin-right: 0;
+    }
+  }
+
+  &:hover .menu__link::before,
+  &--active .menu__link::before{
+    filter: brightness(1);
+  }
+
+  &:hover .menu__link,
+  &--active .menu__link {
+    color: var(--orange-color);
+  }
+
+  @include tablets {
+    margin-right: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.menu__link {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    margin-right: 17px;
+    filter: brightness(0);
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition: .3s;
+
+    @include phones {
+      display: none;
+    }
+  }
+}
+
+.menu__item--main .menu__link::before{
+  @include sprite($main-icon);
+}
+
+.menu__item--services .menu__link::before{
+  @include sprite($service-icon);
+}
+
+.menu__item--comments .menu__link::before{
+  @include sprite($feed-icon);
+}

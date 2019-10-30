@@ -1,0 +1,96 @@
+.sidebar {
+  margin-right: 20px;
+  width: 276px;
+  flex-shrink: 0;
+
+  @include tablets {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.sidebar__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__menu {
+  margin-bottom: 50px;
+
+  @include tablets{
+    margin-bottom: 20px;
+  }
+}
+
+.sidebar__facility {
+  margin-bottom: 60px;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.sidebar__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  margin-bottom: 25px;
+}
+
+.sidebar__news {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.01em;
+  width: 170px;
+  flex-shrink: 0;
+  align-self: center;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.sidebar__news-title {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.sidebar__image-rows {
+  margin-bottom: 50px;
+}
+
+.sidebar__news-time {
+  color: var(--text-color-dark);
+  margin-bottom: 20px;
+}
+
+.sidebar__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.sidebar__flack {
+  margin-bottom: 30px;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.sidebar__partners {
+  margin-bottom: 30px;
+
+  @include tablets {
+    display: none;
+  }
+}

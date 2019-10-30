@@ -1,0 +1,14 @@
+include ../mixins/logo
+include ../mixins/contacts-with-dropdown
+
+.header
+  .header__container.container.container--w1160
+    +logo({
+      blockClass: "header__logo",
+      image: false,
+      text: "Афродита"
+    })
+    +contacts-with-dropdown({
+      blockClass: 'header__contacts'
+    })
+

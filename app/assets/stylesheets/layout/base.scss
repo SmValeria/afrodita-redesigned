@@ -1,0 +1,192 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.42;
+  color: var(--text-color-darker);
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1060px;
+  width: 95%;
+
+  &--w1160 {
+    max-width: 1160px;
+  }
+
+  &--w880 {
+    max-width: 880px;
+  }
+
+  &--w760 {
+    max-width: 760px;
+  }
+
+  &--w740 {
+    max-width: 740px;
+  }
+
+  &--w700 {
+    max-width: 700px;
+  }
+
+  &--w640 {
+    max-width: 640px;
+  }
+
+  &--w220 {
+    max-width: 220px;
+  }
+
+  &--w570 {
+    max-width: 570px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Typography */
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+  border-color: transparent;
+  outline-color: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  border-color: transparent;
+}
+
+textarea {
+  resize: none;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+
+/* Deleting arrows input[type=number] */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+/*Changing color of placeholders*/
+::-webkit-input-placeholder {color: rgba(34, 31, 31, 0.5);}
+::-moz-placeholder          {color: rgba(34, 31, 31, 0.5);}/* Firefox 19+ */
+:-moz-placeholder           {color: rgba(34, 31, 31, 0.5);}/* Firefox 18- */
+:-ms-input-placeholder      {color: rgba(34, 31, 31, 0.5);}
+
+
+
+
+.hidden {
+  display: none;
+}
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,59 @@
+include ../data/menu
+include ../data/features-list
+include ../data/top-news
+include ../data/socials
+
+include ../mixins/image
+include ../mixins/menu
+include ../mixins/icon-list
+include ../mixins/images-rows
+include ../mixins/socials
+
+- const pageName = "Главная"
+
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Афродита | Главная
+    link(rel='icon', href='./assets/images/favicon.png')
+    link(rel='stylesheet', href='./assets/css/main.min.css')
+  body
+    .wrapper
+      include ../sections/header
+      .page
+        .page__container.container.container--w1160
+          aside.sidebar
+            .sidebar__container
+              +menu({
+                list: menu,
+                blockClass: "sidebar__menu"
+              })
+              .facility.sidebar__facility
+                .facility__container
+                  h2.facility__title.sidebar__subtitle особенность
+                  +icon-list({
+                    list: features,
+                    blockClass: "facility__list",
+                    itemClass: "facility__list-item",
+                    icon: false
+                  })
+              .sidebar__news
+                h3.sidebar__news-title топ новостей
+                .sidebar__news-time за сентябрь
+                +image-rows({
+                  list: topNews,
+                  blockClass: "sidebar__image-rows"
+                })
+              +socials({
+                list: socials,
+                blockClass: "sidebar__socials",
+                listClass: "socials__list--center",
+                itemClass: "socials__item--bg-transparent"
+              })
+          main.maincontent
+            include ../sections/hero
+            include ../sections/last-news
+      include ../sections/footer
