@@ -22,7 +22,9 @@
 
 .footer__copyright {
   max-width: 250px;
-  margin-bottom: 15px;
+  @include tablets {
+    margin-bottom: 15px;
+  }
 }
 
 .footer__logo {
