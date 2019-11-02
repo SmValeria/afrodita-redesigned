@@ -18,7 +18,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  transition: color 0.4s;
+  transition: color 0.3s;
   margin-bottom: 26px;
 
   &:last-of-type {
@@ -34,8 +34,8 @@
     filter: brightness(1);
   }
 
-  &:hover .menu__link,
-  &--active .menu__link {
+  &:hover,
+  &--active {
     color: var(--orange-color);
   }
 

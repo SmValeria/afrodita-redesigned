@@ -42,13 +42,14 @@
 .form__el-input {
   background: var(--text-color-light);
   outline: 1px solid transparent;
+  border: 1px solid transparent;
   border-radius: 3px;
   padding: 12px 10px;
-  transition: outline-color .3s;
+  transition: border-color .3s;
 
   &:active,
   &:focus {
-    outline-color: var(--orange-color);
+    border-color: var(--orange-color);
   }
 }
 
@@ -80,7 +81,7 @@
     left: 10px;
     transform: translate(-50%, -50%);
     background-color: #f89513;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 }
 
