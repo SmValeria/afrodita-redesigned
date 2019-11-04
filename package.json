@@ -2,7 +2,7 @@
   "name": "afrodita-redesigned",
   "version": "1.0.0",
   "description": "LoftSchool Base",
-  "main": "afrodita/index.html",
+  "main": "afrodita-redesigned/index.html",
   "author": "Smirnova",
   "license": "MIT",
   "scripts": {
